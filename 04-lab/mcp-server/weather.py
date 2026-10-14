@@ -2,6 +2,9 @@ from typing import Any
 import asyncio
 import httpx
 import os
+from dotenv import load_dotenv, find_dotenv
+load_dotenv(find_dotenv())
+
 from mcp.server.fastmcp import FastMCP
 
 # Initialize FastMCP server
